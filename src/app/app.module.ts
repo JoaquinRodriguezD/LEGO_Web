@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TemasComponent } from './temas/temas.component';
+import { HomeComponent } from './home/home.component';
+import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { MiBolsaComponent } from './mi-bolsa/mi-bolsa.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TemasComponent,
+    HomeComponent,
+    MiCuentaComponent,
+    MiBolsaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
