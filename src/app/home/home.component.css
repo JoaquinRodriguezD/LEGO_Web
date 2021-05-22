@@ -20,40 +20,8 @@ p {
     margin: 0;
 }
 
-.spacer {
-    flex: 1;
-}
-
-.toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #ffcf00;
-    color: black;
-    font-weight: 600;
-}
-
 .toolbar img {
     margin: 0 16px;
-}
-
-.toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-}
-
-.toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-}
-
-.toolbar #twitter-logo:hover,
-.toolbar #youtube-logo:hover {
-    opacity: 0.8;
 }
 
 .content {
@@ -89,8 +57,8 @@ svg.material-icons:not(:last-child) {
     border-radius: 4px;
     border: 1px solid #eee;
     background-color: #fafafa;
-    height: 40px;
-    width: 200px;
+    height: 300px;
+    width: 400px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
@@ -152,15 +120,12 @@ svg#rocket-smoke {
     z-index: -10;
 }
 
-a,
 a:visited,
-a:hover {
-    color: #1976d2;
+a:hover,
+a:active,
+a:link {
+    color: black;
     text-decoration: none;
-}
-
-a:hover {
-    color: #125699;
 }
 
 .terminal {
@@ -290,48 +255,18 @@ svg#clouds {
     }
 }
 
-.dropbtn {
-    background-color: #ffcf00;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1
+.image-slide {
+    width: 90%;
+    height: 400px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #eec300;
-}
-
-.espacio {
-    margin-left: 30px;
+.imgCards {
+    height: 200px;
+    width: 250px;
 }

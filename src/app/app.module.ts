@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MiBolsaComponent } from './mi-bolsa/mi-bolsa.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxScrollTopModule } from 'ngx-scrolltop';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgxScrollTopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
