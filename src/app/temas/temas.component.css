@@ -57,12 +57,12 @@ svg.material-icons:not(:last-child) {
     border-radius: 4px;
     border: 1px solid #eee;
     background-color: #fafafa;
-    height: 300px;
+    height: 350px;
     width: 400px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
@@ -173,4 +173,22 @@ img {
 .imgCards {
     height: 200px;
     width: 250px;
+}
+
+button {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 20em;
+    width: 80%;
+    color: black;
+    background-color: #fd8024;
+    border-color: #fd8024;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+button:hover {
+    background-color: white;
 }

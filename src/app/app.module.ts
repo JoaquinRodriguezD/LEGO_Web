@@ -9,6 +9,11 @@ import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MiBolsaComponent } from './mi-bolsa/mi-bolsa.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import { NgxScrollTopModule } from 'ngx-scrolltop';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgxScrollTopModule
+    NgxScrollTopModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
