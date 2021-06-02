@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Producto } from '../interfaces/producto';
+import { ProductosService } from '../services/productos.service';
 
 @Component({
   selector: 'app-temas',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemasComponent implements OnInit {
 
-  constructor() { }
+public productos: Producto[] = [];
 
-  ngOnInit(): void {
-  }
+  constructor( private productosService:ProductosService) { }
+
+ ngOnInit(): void{
+   this.productosService.getProductos().subscribe(
+     (prod: any[]) =>{
+       this.productos = prod;
+     }
+   );
+
+ }
 
 }

@@ -3,76 +3,14 @@
     <img class="image-slide" src="https://www.brickmarkt.com/img/cms/banner-batmanmovie.png" />
 </div>
 <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/bltce37f892002a9a73/76180_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>Batman™ vs. The Joker™: Persecución en el Batmobile™</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt89e5bfa7bde39205/76188_alt1.jpg" alt="" />
-        <span>Batimóvil de Batman™ Clásico de TV</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt053cfc42041d8ae4/40386_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>Batman™</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt0ac0088ac3e9ff5e/40428_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>El Guason</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blta82a1c825fc6c8bb/76159_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>Persecución de la Trimoto del Joker</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt33517c06380b3aaa/76160_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>Batbase Móvil</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/bltb8b9be5e48294c47/76158_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>¡Caza del Pingüino en la Batlancha!</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt844bb63159f9a1c1/10919_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>Batcueva</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt735fe8930bf582e9/76182_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
-        <span>Capucha de Batman™</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
-    <a class="card" target="_blank" rel="noopener" href="">
-        <img class="imgCards" src="https://images-na.ssl-images-amazon.com/images/I/71NblDEdqkL._AC_SX569_.jpg" alt="" />
-        <span>Batman - Criatura</span>
-        <span>$199.99</span>
-        <button>Comprar</button>
-        <button>Añadir a la Bolsa</button>
-    </a>
+  <a class="card" target="_blank" rel="noopener" *ngFor="let producto of productos">
+    <img class="imgCards" src={{producto.imagen}} alt="" />
+    <span>{{producto.nombre}}</span>
+    <span>Precio: {{producto.precio | currency}}</span>
+    <span>Disponibilidad: {{producto.disponibilidad}}</span>
+    <button>Comprar</button>
+    <button>Añadir a la Bolsa</button>
+</a>
 </div>
 
 <div class="center" id="Frozen2">
@@ -145,7 +83,6 @@
     <a class="card" target="_blank" rel="noopener" href="">
         <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt8034f030da171420/853969_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
         <span>Llavero de Anna LEGO® l Disney Frozen 2</span>
-
         <span>$199.99</span>
         <button>Comprar</button>
         <button>Añadir a la Bolsa</button>
@@ -153,7 +90,6 @@
     <a class="card" target="_blank" rel="noopener" href="">
         <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/blt5740bb6ed629ef1c/853968_alt1.jpg" alt="" />
         <span>Llavero de Elsa LEGO® l Disney Frozen 2</span>
-
         <span>$199.99</span>
         <button>Comprar</button>
         <button>Añadir a la Bolsa</button>
@@ -174,7 +110,6 @@
     <a class="card" target="_blank" rel="noopener" href="">
         <img class="imgCards" src="https://www.lego.com/cdn/cs/set/assets/bltc8a081405f3e4d03/75941_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" alt="" />
         <span>Indominus Rex vs. Ankylosaurus</span>
-
         <span>$199.99</span>
         <button>Comprar</button>
         <button>Añadir a la Bolsa</button>
