@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiCuentaComponent implements OnInit {
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }
+
+  onClick () { localStorage.removeItem('user');}
 
 }

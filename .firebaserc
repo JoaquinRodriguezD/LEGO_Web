@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lego-s-b017b": {
+      "hosting": {
+        "Legos": [
+          "lego-s-b017b"
+        ]
+      }
+    }
+  }
+}
