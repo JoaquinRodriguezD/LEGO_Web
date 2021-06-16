@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guard/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { MiBolsaComponent } from './mi-bolsa/mi-bolsa.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';

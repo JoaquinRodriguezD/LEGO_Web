@@ -18,6 +18,7 @@ import { environment } from 'src/environments/environment';
 import {firebase, firebaseui, FirebaseUIModule} from 'firebaseui-angular';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -55,7 +56,8 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     TemasComponent,
     HomeComponent,
     MiCuentaComponent,
-    MiBolsaComponent
+    MiBolsaComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

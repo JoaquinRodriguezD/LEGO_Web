@@ -12,6 +12,7 @@ export class MiCuentaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick () { localStorage.removeItem('user');}
+  onClick () { localStorage.removeItem('user');
+}
 
 }
